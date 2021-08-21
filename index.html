@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nicepage</title>
+    <!-- icon -->
+    <link rel="icon" href="./images/icon.png">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <!-- fontawsome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js link -->
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body style="font-family: 'Poppins',sans-serif">
+    <!-- nav -->
+    <nav class="w-full bg-blue-500 h-20 justify-center items-center  flex fixed">
+        <div class="container relative items-center h-full justify-between flex mx-auto">
+            <div class="flex items-center">
+                <a href="#" class="text-white pl-10 text-xl font-semibold">logo.</a>
+            </div>
+            <div class="flex">
+                <i id="bar" class="fas pr-10 cursor-pointer text-white text-xl fa-bars"></i>
+            </div>
+        </div>
+        <div
+            class="flex close slide hidden transition-all duration-300 absolute top-20 w-full h-full bg-black h-screen bg-opacity-25">
+            <div
+                class="bg-black z-10 add sm:w-96 items-center sm:items-end w-full flex flex-col space-y-5 px-16 py-10 bg-opacity-90 ">
+                <i class="fas fa-times text-white cursor-pointer font-light text-xl"></i>
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="text-white">About</a>
+                <a href="#" class="text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <!-- section 1 -->
+    <div class="w-full flex justify-center">
+        <div
+            class="container lg:px-40 px-5 space-y-5 lg:space-x-0 mx-auto lg:grid flex flex-col mt-40 xl:grid-cols-3 lg:grid-cols-2 lg:gap-3">
+            <div
+                class="flex items-center lg:items-start md:flex-row flex-col justify-between mt-5 bg-blue-200 col-span-2 rounded-3xl px-10 py-8 lg:py-20">
+                <div class="w-full px-3 lg:w-7/12">
+                    <h1 class="text-blue-500 text-2xl font-bold py-2">Get a demo application</h1>
+                    <h3 class="text-blue-500 font-medium py-5">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit.
+                        Excepturi est earum delectus facere quia fugit. Magni illum iure earum minus vero.</h3>
+                    <button
+                        class="bg-blue-500 hover:bg-white hover:text-blue-500 transition-all duration-300 w-48 h-12 rounded-3xl text-white mt-8 text-lg font-semibold"><i
+                            class="fab fa-apple pr-2"></i> App
+                        Store</button>
+                </div>
+                <img src="./images/img1.png" alt="app_store_image" class="md:w-72 w-80 mt-10">
+            </div>
+            <div class="px-10 py-28 flex flex-col items-center justify-center rounded-3xl bg-green-200">
+                <i class="fas text-green-500 text-8xl fa-file-code"></i>
+                <h3 class="text-2xl py-3 font-bold text-green-400">Clean Code</h3>
+                <p class="text-center text-green-700 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Maxime incidunt porro, quam eum. Dolorem repellendus
+                    magni libero?</p>
+            </div>
+            <div class="px-10 py-28 flex flex-col items-center justify-center rounded-3xl bg-red-200">
+                <div class="flex bg-pink-300 px-10 mb-2 py-2 rounded-xl">
+                    <i class="fab fa-figma text-pink-100 text-6xl"></i>
+                </div>
+                <h3 class="text-2xl py-3 font-bold text-pink-400">Web Design</h3>
+                <p class="text-center text-pink-700 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Maxime incidunt porro, quam eum. Dolorem repellendus
+                    magni libero?</p>
+            </div>
+            <div class="px-10 py-28 flex flex-col items-center justify-center rounded-3xl bg-yellow-200">
+                <div class="flex bg-yellow-300 px-5 mb-2 py-2 rounded-xl">
+                    <i class="fas fa-code text-5xl text-yellow-100 font-light"></i>
+                </div>
+                <h3 class="text-2xl py-3 font-bold text-yellow-400">Development</h3>
+                <p class="text-center text-yellow-800 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Maxime incidunt porro, quam eum. Dolorem repellendus
+                    magni libero?</p>
+            </div>
+            <div class="px-10 py-28 flex flex-col items-center justify-center rounded-3xl bg-purple-200">
+                <div class="flex">
+                    <i class="fas text-7xl text-purple-400 fa-bullhorn"></i>
+                </div>
+                <h3 class="text-2xl py-3 font-bold text-purple-500">Branding</h3>
+                <p class="text-center text-purple-500 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Maxime incidunt porro, quam eum. Dolorem repellendus
+                    magni libero?</p>
+            </div>
+        </div>
+    </div>
+    <!-- section 1 -->
+    <div class="w-full bg-purple-400 mt-16 min-h-screen">
+        <div class="container mx-auto flex md:flex-row flex-col items-center  justify-center">
+            <div class="flex flex-col mt-16 md:w-6/12 sm:w-7/12 w-9/12">
+                <img src="./images/img2.png" class="xl:w-5/12 md:w-7/12 sm:w-8/12 w-10/12" alt="imge2">
+                <div class="flex lg:w-7/12 w-full flex-shrink-0 flex-grow-0 mt-10 flex-col">
+                    <h1 class="text-3xl font-semibold py-5 text-white">Strategic Planning</h1>
+                    <p class="text-purple-100 leading-7 tracking-wider text-md font-medium">Lorem ipsum dolor, sit amet
+                        consectetur
+                        adipisicing
+                        elit.
+                        Voluptatum tempora neque voluptatem expedita repellendus maxime commodi qui dignissimos,
+                        similique obcaecati nisi?</p>
+                </div>
+            </div>
+            <div
+                class="flex flex-grow-0 flex-shrink-0 bg-white xl:w-3/12 md:w-5/12 w-10/12 sm:w-8/12 my-5 md:mt-56 lg:py-20 flex-col flex items-center justify-center px-4 min-h-96 rounded-3xl">
+                <img class="w-6/12 lg:mt-0 mt-10 mb-10" src="./images/img3.png" alt="img_app_development">
+                <h1 class="text-2xl font-semibold text-purple-800 py-4">App Development</h1>
+                <p class="italic text-md leading-7 tracking-wider">Develop an on-demand app for your delivery business
+                    to reach your
+                    targeted
+                    customers without any interruption.</p>
+                <button
+                    class="arrow_down_btn flex lg:my-0 my-5 w-14 h-14 bg-purple-300 rounded-full items-center justify-center text-purple-800"><i
+                        class="fas fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- section2 -->
+    <div class="w-full my-10">
+        <div class="container mx-auto flex flex-col">
+            <div class="flex flex-col">
+                <h2 class="tracking-widest font-light text-xl uppercase text-center py-5">Tetimonials</h2>
+                <h1 class="text-center font-semibold text-purple-400 text-4xl py-5">We are committed expert partners
+                </h1>
+                <h4 class="text-center text-xl">We place huge value on strong relationships and have seen the benefit
+                    they
+                    <br /> to our business. Customer feedback is vital in helping us to get it right.
+                </h4>
+            </div>
+            <div class="flex flex-col mt-10 xl:w-7/12 mx-auto">
+                <div
+                    class="flex items-center my-2 bg-red-200 md:flex-row flex-col lg:px-10 w-full md:px-10 px-3 py-8 h-auto  lg:h-60 rounded-2xl">
+                    <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a00f9926b1c35fc1a187a1f1/fgfg.jpg"
+                        alt="quate_one_image" class="rounded-full w-40 h-40 object-cover">
+                    <div class="md:ml-16 ml-0 md:mt-0 mt-4 text-center md:text-left">
+                        <h3 class="leading-8 text-lg tracking-wider"><i
+                                class="fas fa-quote-left pr-2 text-gray-600 font-light"></i>Vitae
+                            suscipit
+                            tellus maurisa
+                            diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper
+                            feugiat nibh sed pulvinar proin.<i
+                                class="fas fa-quote-right pl-2 text-gray-600 font-light"></i>
+                        </h3>
+                        <h4 class="pt-5 font-semibold text-pink-800 tracking-widest text-xl">NAT REYNOLDS</h4>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center my-2 bg-yellow-200 md:flex-row flex-col lg:px-10 w-full md:px-10 px-3 py-8 h-auto  lg:h-60 rounded-2xl">
+                    <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2ef5a8d109bb59e2a45b40a6/friendly-smiling-woman-looking-pleased-front_176420-20779.jpg"
+                        alt="quate_one_image" class="rounded-full w-40 h-40 object-cover">
+                    <div class="md:ml-16 ml-0 md:mt-0 mt-4 text-center md:text-left">
+                        <h3 class="leading-8 text-lg tracking-wider"><i
+                                class="fas fa-quote-left pr-2 text-gray-600 font-light"></i>Pharetra
+                            vel
+                            turpis nunc eget
+                            lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor
+                            purus non enim praesent elementum.<i
+                                class="pl-2 fas fa-quote-right text-gray-600 font-light"></i></h3>
+                        <h4 class="pt-5 font-semibold text-yellow-800 tracking-widest text-xl">CELIA ALMEDA</h4>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center my-2 bg-green-200 md:flex-row flex-col lg:px-10 w-full md:px-10 px-3 py-8 h-auto  lg:h-60 rounded-2xl">
+                    <img src="	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/8dbe259802825000bae9d222/ttrrt.jpg"
+                        alt="quate_one_image" class="rounded-full w-40 h-40 object-cover">
+                    <div class="md:ml-16 ml-0 md:mt-0 mt-4 text-center md:text-left">
+                        <h3 class="leading-8 text-lg tracking-wider"><i
+                                class="fas fa-quote-left pr-2 text-gray-600 font-light"></i>Vitae
+                            suscipit tellus mauris a
+                            diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper
+                            feugiat nibh sed pulvinar proin.<i
+                                class="pl-2 fas fa-quote-right text-gray-600 font-light"></i></h3>
+                        <h4 class="pt-5 font-semibold text-green-800 tracking-widest text-xl">NAT REYNOLDS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section3 -->
+    <div class="w-full flex min-h-screen bg-purple-300">
+        <div class="container mx-auto pb-5">
+            <h1 class="text-4xl text-center py-10 font-medium text-white">Benefits of working with us</h1>
+            <div class="flex flex-wrap w-full justify-center">
+                <div class="flex flex-col rounded-2xl mx-7 py-16 items-start w-96 px-7 py-10 bg-white m-7">
+                    <h1 class="text-6xl py-3 font-semibold text-purple-400">01</h1>
+                    <h3 class="py-4 text-2xl text-purple-400 font-semibold">High Quality</h3>
+                    <p class="font-light">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue
+                        neque gravida in
+                        fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <button
+                        class="w-36 mt-5 mb-5 bg-purple-400 text-white hover:bg-purple-300 transition-all duration-200 py-2 rounded-3xl">more</button>
+                </div>
+                <div class="flex flex-col rounded-2xl mx-7 py-16 items-start w-96 px-7 py-10 bg-white m-7">
+                    <h1 class="text-6xl py-3 font-semibold text-purple-400">02</h1>
+                    <h3 class="py-4 text-2xl text-purple-400 font-semibold">Creative Team</h3>
+                    <p class="font-light">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue
+                        neque gravida in
+                        fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <button
+                        class="w-36 mt-5 mb-5 bg-purple-400 text-white hover:bg-purple-300 transition-all duration-200 py-2 rounded-3xl">more</button>
+                </div>
+                <div class="flex flex-col rounded-2xl mx-7 py-16 items-start w-96 px-7 py-10 bg-white m-7">
+                    <h1 class="text-6xl py-3 font-semibold text-purple-400">03</h1>
+                    <h3 class="py-4 text-2xl text-purple-400 font-semibold">Amazing Results</h3>
+                    <p class="font-light">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue
+                        neque gravida in
+                        fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <button
+                        class="w-36 mt-5 mb-5 bg-purple-400 text-white hover:bg-purple-300 transition-all duration-200 py-2 rounded-3xl">more</button>
+                </div>
+                <div class="flex flex-col rounded-2xl mx-7 py-16 items-start w-96 px-7 py-10 bg-white m-7">
+                    <h1 class="text-6xl py-3 font-semibold text-purple-400">04</h1>
+                    <h3 class="py-4 text-2xl text-purple-400 font-semibold">Best Pricing</h3>
+                    <p class="font-light">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue
+                        neque gravida in
+                        fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <button
+                        class="w-36 mt-5 mb-5 bg-purple-400 text-white hover:bg-purple-300 transition-all duration-200 py-2 rounded-3xl">more</button>
+                </div>
+                <div class="flex flex-col rounded-2xl mx-7 py-16 items-start w-96 px-7 py-10 bg-white m-7">
+                    <h1 class="text-6xl py-3 font-semibold text-purple-400">05</h1>
+                    <h3 class="py-4 text-2xl text-purple-400 font-semibold">Innovations</h3>
+                    <p class="font-light">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue
+                        neque gravida in
+                        fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <button
+                        class="w-36 mt-5 mb-5 bg-purple-400 text-white hover:bg-purple-300 transition-all duration-200 py-2 rounded-3xl">more</button>
+                </div>
+                <div class="flex flex-col rounded-2xl mx-7 py-16 items-start w-96 px-7 py-10 bg-white m-7">
+                    <h1 class="text-6xl py-3 font-semibold text-purple-400">06</h1>
+                    <h3 class="py-4 text-2xl text-purple-400 font-semibold">24/7 Support</h3>
+                    <p class="font-light">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue
+                        neque gravida in
+                        fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <button
+                        class="w-36 mt-5 mb-5 bg-purple-400 text-white hover:bg-purple-300 transition-all duration-200 py-2 rounded-3xl">more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full justify-center my-10 flex">
+        <div class="container flex lg:flex-row flex-col items-center">
+            <div class="xl:w-7/12 lg:w-8/12 w-full ml-0 sm:ml-3 xl:px-20 xl:ml-16">
+                <h1 class="text-5xl py-5 font-semibold text-purple-400 px-1">About Us</h1>
+                <p class="py-2 px-2 tracking-wide leading-10 font-light">Sample text. Click to Egestas egestas fringilla
+                    phasellus
+                    faucibus
+                    scelerisque eleifend
+                    donec
+                    pretium vulputate. Pharetra magna ac placerat vestibulum. Quam lacus suspendisse faucibus
+                    interdum posuere lorem. Egestas tellus rutrum tellus pellentesque eu tincidunt. Neque vitae
+                    tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque
+                    habitant morbi. Interdum velit euismod in pellentesque massa placerat duis. </p>
+                <p class="py-2 px-2 tracking-wide leading-10 font-light">Quis viverra nibh cras pulvinar mattis. Ornare
+                    arcu
+                    dui vivamus arcu felis bibendum ut tristique.
+                    Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis
+                    enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim. the text box. Click
+                    again or double click to start editing the text.</p>
+            </div>
+            <div class="sm:w-8/12 w-full lg:w-4/12 lg:items-start items-center flex flex-col ml-0 sm:ml-10">
+                <img src="https://bootstrapmade.com/demo/templates/Vesperr/assets/img/team/team-3.jpg"
+                    class="w-52 rounded-full" alt="img_about">
+                <h2 class="font-bold text-2xl text-purple-400 py-10 px-1">I help companies tincidunt tortor aliquam
+                    nulla
+                    facilisi cras fermentum.
+                </h2>
+                <button
+                    class="bg-purple-400 py-2 px-10 text-white font-medium cursor-pointer rounded hover:bg-gray-900 transition-all duration-200"><i
+                        class="fab fa-linkedin"></i>
+                    Find me
+                    on LinkedIn</button>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-purple-400">
+        <div class="container mx-auto py-10 flex flex-col items-center">
+            <h3 class="text-center text-purple-300 uppercase tracking-wider font-bold">get started</h3>
+            <h2 class="text-center text-4xl py-10 text-white font-medium px-1">Simple, Transparent Pricing</h2>
+            <h1 class="text-yellow-500 font-bold text-6xl text-center pb-10 ">It's Free!</h1>
+            <p class="text-center font-medium text-purple-50 px-1">We’re still in beta and we will be for awhile. As we
+                add
+                more<br>
+                functionality,
+                we’ll look into
+                other plans with more controls.</p>
+            <button
+                class="mt-10 mb-5 py-4 px-16 hover:bg-purple-300 transition-all duration-150 font-medium text-purple-500 text-xl bg-white mx-auto"
+                style="border-radius: 2em;">Get
+                Started</button>
+            <p class="py-10 px-1">Copyright 2021 nicepage.com • Terms of Service • Privacy
+                Policy</p>
+        </div>
+    </div>
+    <div class="w-full bg-black flex">
+        <div class="container mx-auto items-center justify-center flex py-20">
+            <p class="text-center text-purple-100">Sample text. Click to select the text box. Click again or double <br>
+                click to start editing the text.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
